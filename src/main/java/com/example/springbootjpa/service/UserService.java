@@ -23,7 +23,7 @@ public class UserService {
 
         if (optUser.isPresent()){
             User user = optUser.get();
-            return new UserResponse(user.getId(), user.getUsername(), "");
+            return new UserResponse(user.getId(), user.getUsername(), "회원등록성공");
         }else{
             return new UserResponse(id,"","해당 id의 유저가 없습니다.");
         }
